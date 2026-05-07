@@ -1,11 +1,391 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+const siteName = "ビューノ飛騨高山";
+const heroTitle = "あなたの不動産を、";
+const heroTitleSub = "価値ある宿泊施設へ。";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="ja" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{siteName} | 民泊運営代行プロフェッショナル</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-[#f8f9fa] text-slate-900 font-sans tracking-tight">
+
+<header class="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-slate-100">
+  <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+    
+    <a href="/" class="text-xl font-serif font-black tracking-tighter text-slate-900 z-[210]">
+      ビューノ飛騨高山
+    </a>
+
+<nav class="hidden lg:flex items-center gap-12 text-[10px] font-bold tracking-[0.2em] uppercase text-slate-500">
+      <a href="#pricing" class="hover:text-slate-900 transition">Management Plans</a>
+      <a href="#service-details" class="hover:text-slate-900 transition">Services</a>
+      <a href="#team" class="hover:text-slate-900 transition">Team</a>
+      <a href="#contact" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition shadow-sm lowercase tracking-normal">contact</a>
+    </nav>
+
+    <button id="menu-btn" class="lg:hidden z-[210] relative w-10 h-10 flex flex-col justify-center items-center" aria-label="Menu">
+      <span id="line-1" class="w-6 h-[1.5px] bg-slate-900 mb-1.5 transition-all duration-300"></span>
+      <span id="line-2" class="w-6 h-[1.5px] bg-slate-900 transition-all duration-300"></span>
+    </button>
+  </div>
+
+  <div id="mobile-overlay" class="hidden fixed top-0 left-0 w-full h-screen bg-[#0f172a] z-[200] flex-col items-center justify-center opacity-0 transition-all duration-500 overflow-hidden">
+    <nav class="flex flex-col items-center gap-12 text-center py-20">
+      <a href="#pricing" class="mobile-link text-white text-3xl font-serif tracking-widest opacity-0 translate-y-10 transition-all duration-500">Management Plans</a>
+      <a href="#service-details" class="mobile-link text-white text-3xl font-serif tracking-widest opacity-0 translate-y-10 transition-all duration-500">Services</a>
+      <a href="#team" class="mobile-link text-white text-3xl font-serif tracking-widest opacity-0 translate-y-10 transition-all duration-500">Team</a>
+      
+      <a href="#contact" class="mobile-link mt-8 bg-blue-600 text-white px-12 py-4 rounded-full text-xs font-bold tracking-[0.2em] opacity-0 translate-y-10 transition-all duration-500">CONTACT</a>
+    </nav>
+    <div class="absolute bottom-20 text-white/5 text-6xl font-serif font-black select-none pointer-events-none">OOTSUKA.</div>
+  </div>
+</header>
+
+    <main>
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#0f172a]">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/60 via-transparent to-[#0f172a] z-10"></div>
+    
+    <img 
+      src="/Gemini_Generated_Image_cd9qfycd9qfycd9q.png" 
+      class="w-full h-full object-cover opacity-50 scale-105"
+      alt="Luxury Interior"
+    />
+  </div>
+
+  <div class="relative z-20 text-center px-6 max-w-4xl">
+    <div class="inline-block mb-8 overflow-hidden">
+      <span class="block text-[10px] md:text-xs tracking-[0.6em] text-blue-400 font-bold uppercase animate-fade-in-up">
+        Professional Property Management
+      </span>
+    </div>
+    
+    <h1 class="text-4xl md:text-5xl font-serif text-white leading-[1.2] mb-10 tracking-tight">
+      不動産を、<br>
+      <span class="italic text-blue-400">価値ある</span>宿へ。
+    </h1>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
+      <p class="text-slate-300 text-sm md:text-base font-light tracking-wide max-w-md leading-loose border-l border-white/20 pl-6 text-left">
+        私たちは、空間のポテンシャルを最大限に引き出し、
+        オーナー様へ圧倒的な収益と安心を提供します。
+      </p>
+    </div>
+
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+      <span class="text-[9px] tracking-[0.3em] text-white/30 uppercase vertical-text">Scroll</span>
+      <div class="w-[1px] h-12 bg-gradient-to-b from-white/40 to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+	  <section id="pricing" class="py-20 md:py-32 bg-[#f8f9fa] px-6 scroll-mt-20">
+  <div class="max-w-[1100px] mx-auto">
+    
+    <div class="text-center mb-16 md:mb-24">
+      <h2 class="text-2xl md:text-3xl font-black tracking-[0.1em] text-[#0f172a] mb-3">MANAGEMENT PLANS</h2>
+      <p class="text-xs md:text-sm text-[#64748b]">オーナー様のニーズに合わせた4つの管理プラン</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 items-stretch group/container">
+      
+      <div class="relative bg-white border border-[#e2e8f0] rounded-xl p-8 text-center transition-all duration-500 hover:z-20 hover:scale-[1.05] hover:border-[#0f172a] hover:shadow-2xl hover:!opacity-100 group-hover/container:opacity-40 flex flex-col">
+        <h3 class="text-base font-black mb-6 text-[#0f172a] h-12 flex items-center justify-center leading-tight">
+          フル代行<br>パーフェクト
+        </h3>
+        <div class="mb-6">
+          <span class="text-5xl font-extrabold text-[#0f172a]">35</span>
+          <span class="text-xl font-bold text-[#0f172a] ml-1">%</span>
+          <p class="text-[10px] text-[#94a3b8] mt-1">売上の35%</p>
+        </div>
+        <div class="border-t border-[#f1f5f9] pt-6 text-left flex-grow">
+          <ul class="space-y-3 text-[11px] text-[#1e293b]">
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">清掃 / リネン / ゴミ捨て</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">集客・リスティング管理</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">SNS運用代行</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">民泊事業報告業務（全般）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative bg-white border border-[#e2e8f0] rounded-xl p-8 text-center transition-all duration-500 hover:z-20 hover:scale-[1.05] hover:border-[#0f172a] hover:shadow-2xl hover:!opacity-100 group-hover/container:opacity-40 flex flex-col">
+        <h3 class="text-base font-black mb-6 text-[#0f172a] h-12 flex items-center justify-center leading-tight">
+          スタンダード<br>代行
+        </h3>
+        <div class="mb-6">
+          <span class="text-5xl font-extrabold text-[#0f172a]">30</span>
+          <span class="text-xl font-bold text-[#0f172a] ml-1">%</span>
+          <p class="text-[10px] text-[#94a3b8] mt-1">売上の30%</p>
+        </div>
+        <div class="border-t border-[#f1f5f9] pt-6 text-left flex-grow">
+          <ul class="space-y-3 text-[11px] text-[#1e293b]">
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">清掃 / リネン / ゴミ捨て</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">民泊事業報告業務（全般）</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#cbd5e1] before:text-[8px] line-through text-slate-400">集客 / SNS運用</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative bg-white border border-[#e2e8f0] rounded-xl p-8 text-center transition-all duration-500 hover:z-20 hover:scale-[1.05] hover:border-[#0f172a] hover:shadow-2xl hover:!opacity-100 group-hover/container:opacity-40 flex flex-col">
+        <h3 class="text-base font-black mb-6 text-[#0f172a] h-12 flex items-center justify-center leading-tight">
+          保守管理<br>プラン
+        </h3>
+        <div class="mb-6">
+          <span class="text-5xl font-extrabold text-[#0f172a]">20</span>
+          <span class="text-xl font-bold text-[#0f172a] ml-1">%</span>
+          <p class="text-[10px] text-[#94a3b8] mt-1">売上の20%</p>
+        </div>
+        <div class="border-t border-[#f1f5f9] pt-6 text-left flex-grow">
+          <ul class="space-y-3 text-[11px] text-[#1e293b]">
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">民泊事業の保守管理</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">緊急時の現地駆け付け</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#cbd5e1] before:text-[8px] line-through text-slate-400">清掃 / リネン / ゴミ捨て</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative bg-white border border-[#e2e8f0] rounded-xl p-8 text-center transition-all duration-500 hover:z-20 hover:scale-[1.05] hover:border-[#0f172a] hover:shadow-2xl hover:!opacity-100 group-hover/container:opacity-40 flex flex-col">
+        <h3 class="text-base font-black mb-6 text-[#0f172a] h-12 flex items-center justify-center leading-tight">
+          スポット<br>清掃
+        </h3>
+        <div class="mb-6">
+          <span class="text-4xl font-extrabold text-[#0f172a]">20,000</span>
+          <span class="text-lg font-bold text-[#0f172a] ml-1">円</span>
+          <p class="text-[10px] text-[#94a3b8] mt-1">1回あたりの請求額</p>
+        </div>
+        <div class="border-t border-[#f1f5f9] pt-6 text-left flex-grow">
+          <ul class="space-y-3 text-[11px] text-[#1e293b]">
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">プロ品質の客室清掃</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#3b82f6] before:text-[8px]">リネン交換 / ゴミ捨て</li>
+            <li class="relative pl-5 before:content-['●'] before:absolute before:left-0 before:text-[#cbd5e1] before:text-[8px] line-through text-slate-400">管理・報告業務</li>
+          </ul>
+          <p class="text-[9px] text-[#94a3b8] mt-4 italic">※単発でのご依頼</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="service-details" class="py-24 bg-white px-6">
+  <div class="max-w-[1100px] mx-auto">
+    
+    <div class="mb-24 text-center">
+      <h2 class="text-[10px] tracking-[0.5em] text-blue-600 font-bold uppercase mb-4">Service Details</h2>
+      <p class="text-1.5xl font-serif text-slate-900 leading-tight">
+        妥協のない運用クオリティ。<br>
+        オーナー様の資産価値を守り抜きます。
+      </p>
+    </div>
+
+    <div class="space-y-32">
+      
+      <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div class="w-full md:w-1/2 h-[350px] md:h-[450px] overflow-hidden rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80" alt="Housekeeping" class="w-full h-full object-cover hover:scale-105 transition duration-1000">
+        </div>
+        <div class="w-full md:w-1/2">
+          <span class="text-4xl font-serif text-slate-100 block mb-4">01</span>
+          <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b border-slate-50 pb-4">ホテル基準の清掃・リネン管理</h3>
+          <p class="text-slate-600 leading-relaxed mb-6 text-sm">
+            民泊の成否を分けるのは「清潔さ」です。私たちは独自に構築した60項目以上の清掃チェックリストを用い、徹底した除菌と美観維持を行います。
+          </p>
+          <ul class="space-y-3 text-[13px] text-slate-500">
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>プロ仕様の洗剤による徹底除菌</li>
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>専門業者による高温殺菌済リネン</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div class="w-full md:w-1/2 order-2 md:order-1">
+          <span class="text-4xl font-serif text-slate-100 block mb-4">02</span>
+          <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b border-slate-50 pb-4">戦略的集客とSNSマーケティング</h3>
+          <p class="text-slate-600 leading-relaxed mb-6 text-sm">
+            Airbnb運用に加え、InstagramやTikTokを用いた独自の集客導線を構築。OTAのアルゴリズムを解析し、露出を最大化させることで、プラットフォームに依存しない高稼働を実現します。
+          </p>
+          <ul class="space-y-3 text-[13px] text-slate-500">
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>AIによる365日の動的価格設定</li>
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>SNSを通じたファン・リピーター獲得</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/2 order-1 md:order-2 h-[350px] md:h-[450px] overflow-hidden rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Digital Marketing" class="w-full h-full object-cover hover:scale-105 transition duration-1000">
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div class="w-full md:w-1/2 h-[350px] md:h-[450px] overflow-hidden rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1454165833767-027ffea7028c?auto=format&fit=crop&w=1200&q=80" alt="Business Support" class="w-full h-full object-cover hover:scale-105 transition duration-1000">
+        </div>
+        <div class="w-full md:w-1/2">
+          <span class="text-4xl font-serif text-slate-100 block mb-4">03</span>
+          <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b border-slate-50 pb-4">透明性の高い事業運営と報告</h3>
+          <p class="text-slate-600 leading-relaxed mb-6 text-sm">
+            オーナー様が不安を感じないよう、収支状況やゲストの声、物件のコンディションを月次レポートとして詳細にご報告。24時間体制の多言語対応で、トラブルも未然に防ぎます。
+          </p>
+          <ul class="space-y-3 text-[13px] text-slate-500">
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>24時間365日の多言語ゲスト対応</li>
+            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>改善提案を含む詳細な月次レポート</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="team" class="py-24 bg-[#f8f9fa] px-6">
+  <div class="max-w-[1100px] mx-auto">
+    
+    <div class="text-center mb-20">
+      <h2 class="text-[10px] tracking-[0.5em] text-blue-600 font-bold uppercase mb-4">Our Team</h2>
+      <p class="text-3xl font-serif text-slate-900">
+        各分野のプロフェッショナルが、<br class="hidden md:block">
+        あなたの資産をサポートします。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+      
+      <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="h-80 overflow-hidden relative">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Team Leader" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105 object-[center_top_15%]">          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/80 to-transparent">
+            <p class="text-white text-xs tracking-widest opacity-80 mb-1 font-bold">Manager</p>
+            <h3 class="text-white text-xl font-bold font-serif text-blue-400">田中　秀治</h3>
+          </div>
+        </div>
+        <div class="p-8">
+          <p class="text-slate-500 text-xs leading-relaxed">
+            不動産投資と民泊運営の専門家。これまでに50件以上の物件立ち上げに携わり、収益最大化のための緻密な戦略立案を得意とする。
+          </p>
+        </div>
+      </div>
+
+      <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="h-80 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Marketing Specialist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/80 to-transparent">
+            <p class="text-white text-xs tracking-widest opacity-80 mb-1 font-bold">Assistanat&Web Design</p>
+            <h3 class="text-white text-xl font-bold font-serif text-blue-400">小澤　恵梨花</h3>
+          </div>
+        </div>
+        <div class="p-8">
+          <p class="text-slate-500 text-xs leading-relaxed">
+            SNSマーケティングとブランド構築のプロ。InstagramやTikTokを駆使し、物件の魅力を世界中のゲストへ届け、リピート率向上を実現。
+          </p>
+        </div>
+      </div>
+
+      <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="h-80 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Operations Manager" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/80 to-transparent">
+            <p class="text-white text-xs tracking-widest opacity-80 mb-1 font-bold">Assistant&Website Development</p>
+            <h3 class="text-white text-xl font-bold font-serif text-blue-400">大塚　崚平</h3>
+          </div>
+        </div>
+        <div class="p-8">
+          <p class="text-slate-500 text-xs leading-relaxed">
+            現場管理とホスピタリティの統括責任者。清掃クオリティの維持、多言語ゲスト対応の自動化など、円滑な現場運営の仕組み化を担う。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="py-20 bg-slate-900 text-white text-center">
+      <p class="text-[10px] tracking-[0.5em] text-slate-500 uppercase">
+        &copy; 2026 {siteName}. All rights reserved.
+      </p>
+    </footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const overlay = document.getElementById('mobile-overlay');
+  const line1 = document.getElementById('line-1');
+  const line2 = document.getElementById('line-2');
+  const links = document.querySelectorAll('.mobile-link');
+
+  let isOpen = false;
+
+  function toggleMenu() {
+    isOpen = !isOpen;
+    
+    if (isOpen) {
+      overlay.classList.remove('hidden');
+      overlay.classList.add('flex');
+      
+      setTimeout(() => {
+        overlay.classList.add('opacity-100');
+        line1.style.transform = 'translateY(4px) rotate(45deg)';
+        line2.style.transform = 'translateY(-4px) rotate(-45deg)';
+        line1.style.backgroundColor = '#ffffff';
+        line2.style.backgroundColor = '#ffffff';
+        
+        links.forEach((link, i) => {
+          setTimeout(() => {
+            link.classList.remove('opacity-0', 'translate-y-10');
+            link.classList.add('opacity-100', 'translate-y-0');
+          }, i * 120);
+        });
+      }, 50);
+      document.body.style.overflow = 'hidden';
+    } else {
+      overlay.classList.remove('opacity-100');
+      line1.style.transform = 'none';
+      line2.style.transform = 'none';
+      line1.style.backgroundColor = '#0f172a';
+      line2.style.backgroundColor = '#0f172a';
+      
+      links.forEach(link => {
+        link.classList.add('opacity-0', 'translate-y-10');
+        link.classList.remove('opacity-100', 'translate-y-0');
+      });
+
+      setTimeout(() => {
+        overlay.classList.replace('flex', 'hidden');
+        document.body.style.overflow = '';
+      }, 500);
+    }
+  }
+
+  menuBtn?.addEventListener('click', toggleMenu);
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      toggleMenu();
+      
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.replace('#', '');
+        setTimeout(() => {
+          const target = document.getElementById(targetId);
+          if (target) {
+            const offset = 80;
+            const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: elementPosition - offset,
+              behavior: 'smooth'
+            });
+          }
+        }, 550);
+      }
+    });
+  });
+</script>
+
+  </body>
+</html>
